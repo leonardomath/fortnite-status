@@ -1,12 +1,12 @@
 # Fortnite Player Status
-![Be the hero](/public/demo.gif)
+![Image](/public/demo.gif)
 
 ### Installing
 ```
 yarn dev
 ```
 ## Built With
-https://mozilla.github.io/nunjucks/
+
 * [Node.js](https://nodejs.org/en/) - Back-End
 * [Express](https://expressjs.com/) - Back-End framework
 * [Axios](https://github.com/axios/axios) - Used to send HTTP request 
