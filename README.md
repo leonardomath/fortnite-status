@@ -5,6 +5,12 @@
 ```
 yarn
 ```
+
+### Running
+```
+yarn dev
+```
+
 ## Built With
 
 * [Node.js](https://nodejs.org/en/) - Back-End
