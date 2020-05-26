@@ -3,7 +3,7 @@
 
 ### Installing
 ```
-yarn dev
+yarn
 ```
 ## Built With
 
