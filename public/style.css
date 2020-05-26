@@ -1,0 +1,48 @@
+body {
+  background-image: url('background.jpg');
+  background-position: top center;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+.box {
+  max-height: 180px;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.container, button {
+  margin-top: 5px;
+}
+
+.container input, button {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+}
+
+.container .stats {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  text-align: center;
+}
+
+.error {
+  display: inline-block;
+  margin: 10px auto;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fortnite player status</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="container">
+<form method="post">
+<input class="input is-medium" type="text" name="username" placeholder="Nickname" />
+<button class="button is-primary" type="submit">Search</button>
+</form>
+
+{% if user %}
+<section class="stats">
+  <ul class="box">
+    <li><h1 class="title is-4"> Seasson: 2</h1></li>
+    <li><strong> Nickname: </strong> {{ user.epicUserHandle }}</li>
+    <li><strong> Wins: </strong> {{ user.stats.p2.top1.displayValue }}</li>
+    <li><strong> Kd: </strong> {{ user.stats.p2.kd.displayValue }} </li>
+    <li><strong> Matches: </strong> {{ user.stats.p2.matches.displayValue }} </li>
+    <li><strong> Kills: </strong> {{ user.stats.p2.kills.displayValue }} </li>
+  </ul>
+  <ul class="box">
+    <li><h1 class="title is-4">Life Time Status</h1></li>
+    <li><strong> Wins </strong> {{ user.lifeTimeStats[8].value}}</li>
+    <li><strong> Kills </strong> {{ user.lifeTimeStats[10].value}}</li>
+    <li><strong> K/d </strong> {{ user.lifeTimeStats[11].value}}</li>
+  </ul>
+{% elif error %}
+  <p class="error tag is-warning">User not found</p>
+{% endif %}
+</section>
+</div>
+</body>
+</html>
