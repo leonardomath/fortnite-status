@@ -9,7 +9,7 @@ already generated paste the key in api.js
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+What things you need to install the software
 
 ```
 Node >= v12.16.3
