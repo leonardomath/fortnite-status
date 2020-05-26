@@ -1,5 +1,20 @@
 # Fortnite Player Status
+
+## Getting Started
+
+First you need generate an api key: https://fortnitetracker.com/site-api
+already generated paste the key in api.js 
+
 ![Image](/public/demo.gif)
+
+### Prerequisites
+
+What things you need to install the software and how to install them
+
+```
+Node >= v12.16.3
+Yarn >= 1.22.4
+```
 
 ### Installing
 ```
